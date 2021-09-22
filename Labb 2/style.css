@@ -10,11 +10,12 @@ body {
     background-attachment: fixed;
 }
 .navbar{
+    height: 132px;
     display: flex;
     justify-content: space-between;
     color:white;
     font-family: 'Montserrat', sans-serif;
-    /* background-color: rgba(0, 0, 0, 0.2) */
+    background-color: rgba(0, 0, 0, 0.2);
 }
 .nav-links ul{
     margin: 0;
@@ -27,22 +28,28 @@ body {
 }
 .nav-links li a{
     text-decoration: none;
-    color: white;
-    padding: 2rem;
-    display: block;
-    right: 0;
+    color: rgb(230, 230, 230);
+    margin: 16px;
+    padding: 16px;
     font-size: 30px;
 }
 .nav-links li a:hover{
-    color: rgb(56, 56, 56);
+    color: rgb(255, 255, 255);
     transition: 0.5s;
+    transform: scale(1.1);
 }
-
 .logo img{
-    margin-left: 10px;
-    margin-top: 10px;
-    width: 100px;
-    height: 100px;
+    margin-left: 30px;
+    width: 70px;
+    height: 70px;
+}
+.logo p{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 30px;
+    margin: 0;
+    margin-left: 32px;
+    color: rgb(230, 230, 230);
 }
 
 @media screen and (max-width: 1024px){
@@ -54,18 +61,27 @@ body {
         font-size: 20px;
     }
     .logo img{
-        width: 80px;
-        height: 80px;
+        width: 50px;
+        height: 50px;
         }
 }
     
 @media screen and (max-width: 600px){
+    body {
+        background-repeat: no-repeat;
+        background-position-x: center;
+    }
     .nav-links li a{
-        font-size: 18px; 
-        padding: 0.5rem;    
+        font-size: 12px;  
+        margin: 16px;
+        padding: 0px;
     }
 .logo img{
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
+    margin-left: 16px;
     }
+.logo p{
+    font-size: 12px;
+    margin: 16px
 }
