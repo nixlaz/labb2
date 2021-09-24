@@ -1,88 +1,200 @@
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
-
 body {
-    margin: 0;
-    padding: 0;
-    background-image: url('img/1.jpg');
-    background-size: cover;
-    background-attachment: fixed;
+	margin: 0;
+	padding: 0;
+	background-image: url("img/1.jpg");
+	background-size: cover;
+	background-attachment: fixed;
 }
-.navbar{
-    height: 132px;
-    display: flex;
-    justify-content: space-between;
-    color:white;
-    font-family: 'Montserrat', sans-serif;
-    background-color: rgba(0, 0, 0, 0.2);
+.navbar {
+	display: inline;
+	height: 132px;
+	display: flex;
+	color: white;
+	font-family: "Montserrat", sans-serif;
+	background-color: rgba(0, 0, 0, 0.3);
 }
-.nav-links ul{
-    margin: 0;
-    padding: 0;
-    display: flex;
+.nav-links ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
 }
-.nav-links li{
-    display: flex;
-    list-style: none;
+.nav-links li {
+	display: flex;
+	list-style: none;
 }
-.nav-links li a{
-    text-decoration: none;
-    color: rgb(230, 230, 230);
-    margin: 16px;
-    padding: 16px;
-    font-size: 30px;
+.nav-links li a {
+	text-decoration: none;
+	color: rgb(230, 230, 230);
+	margin: 16px;
+	font-size: 30px;
 }
-.nav-links li a:hover{
-    color: rgb(255, 255, 255);
-    transition: 0.5s;
-    transform: scale(1.1);
+.nav-links li a:hover {
+	color: rgb(255, 255, 255);
+	transition: 0.5s;
+	transform: scale(1.1);
 }
-.logo img{
-    margin-left: 30px;
-    width: 70px;
-    height: 70px;
+.logo img {
+	margin-left: 30px;
+	width: 70px;
+	height: 70px;
 }
-.logo p{
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 30px;
-    margin: 0;
-    margin-left: 32px;
-    color: rgb(230, 230, 230);
+.logo p {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 30px;
+	margin: 0;
+	margin-left: 32px;
+	color: rgb(230, 230, 230);
+}
+.carousel {
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 80%;
+	height: auto;
+	justify-content: space-around;
+}
+.mainCl {
+	margin: 0 auto;
+	margin-top: 30px;
+	padding: 10px;
+	align-items: center;
+	background-color: white;
+	width: 60%;
+}
+.mainCl img {
+	width: 100%;
+	height: auto;
+}
+.mainCl h1{
+    text-align: center;
+}
+.h1 {
+	color: white;
+}
+.textBox{
+    width: 70%;
+    max-width: 610px;
+    height: auto;
+    margin-left: 130px;
+    margin-top: 200px;
+    font-family: 'Roboto', sans-serif;
+}
+.textBox h2{
+    color: white;
+    font-size: 24px;
+}
+.textBox h1{
+    color: white;
+    font-size: 70px;
+}
+.textBox h1 span{
+    color: #FD8846;
+}
+.textBox h3{
+    color: white;
+    font-size: 24px;
+}
+.cards{
+	margin-top: 20px ;
+    display:flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+/* Tablet Styles */
+@media screen and (max-width: 960px) {
+	body {
+		background-repeat: no-repeat;
+		background-position-x: center;
+	}
+	.nav-links li a {
+		font-size: 20px;
+	}
+	.logo img {
+		width: 50px;
+		height: 50px;
+	}
+	.logo p {
+		font-size: 20px;
+        margin-left: 20px;
+	}
+	.mainCl {
+		width: 70%;
+	}
+	.carousel {
+		width: 90%;
+		height: auto;
+	}
+    .navbar {
+	    height: 110px;
+    }
+    .textBox{
+        margin-left: 100px;
+        max-width: 450px;
+    }
+    .textBox h2{
+        color: white;
+        font-size: 18px;
+    }
+    .textBox h1{
+        color: white;
+        font-size: 50px;
+    }
+    .textBox h3{
+        color: white;
+        font-size: 18px;
+    }
+    .logo p{
+        display: none;
+    }
 }
 
-@media screen and (max-width: 1024px){
-    body {
-        background-repeat: no-repeat;
-        background-position-x: center;
+/* Mobile Styles */
+@media screen and (max-width: 400px) {
+	body {
+		background-repeat: no-repeat;
+		background-position-x: center;
+	}
+    .navbar{
+        height: 80px;
     }
-    .nav-links li a{
-        font-size: 20px;
+	.nav-links li a {
+		font-size: 12px;
+		margin: 16px;
+		padding: 0px;
+	}
+	.logo img {
+		width: 40px;
+		height: 40px;
+		margin-left: 16px;
+	}
+	.logo p {
+		font-size: 12px;
+		margin: 16px;
+	}
+	.carousel {
+		width: 90%;
+		height: auto;
+	}
+    .textBox{
+        margin-left: 16px;
+        width: 50%;
     }
-    .logo img{
-        width: 50px;
-        height: 50px;
-        }
-}
-    
-@media screen and (max-width: 600px){
-    body {
-        background-repeat: no-repeat;
-        background-position-x: center;
+    .textBox h2{
+        color: white;
+        font-size: 12px;
     }
-    .nav-links li a{
-        font-size: 12px;  
-        margin: 16px;
-        padding: 0px;
+    .textBox h1{
+        color: white;
+        font-size: 30px;
     }
-.logo img{
-    width: 40px;
-    height: 40px;
-    margin-left: 16px;
+    .textBox h1 span{
+        color: #FD8846;
     }
-.logo p{
-    font-size: 12px;
-    margin: 16px
+    .textBox h3{
+        color: white;
+        font-size: 12px;
     }
 }
